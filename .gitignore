@@ -1,0 +1,5 @@
+.env
+.env.*
+secrets.properties
+.clasprc.json
+node_modules/

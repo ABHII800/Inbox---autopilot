@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1180" viewBox="0 0 1600 1180">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5f8ff"/><stop offset="1" stop-color="#f1fbf8"/></linearGradient>
+  <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#15304a" flood-opacity=".10"/></filter>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M1,1 L10,6 L1,11" fill="none" stroke="#66809c" stroke-width="2"/></marker>
+  <style>
+    text{font-family:Arial,Helvetica,sans-serif;fill:#17324d}.title{font-size:52px;font-weight:700}.sub{font-size:24px;fill:#58718a}.h{font-size:26px;font-weight:700}.p{font-size:20px}.small{font-size:17px;fill:#526b82}.tiny{font-size:15px;fill:#526b82}.num{font-size:24px;font-weight:700;fill:white}.pill{font-size:17px;font-weight:700}
+  </style>
+</defs>
+<rect width="1600" height="1180" fill="url(#bg)"/>
+<circle cx="1470" cy="95" r="120" fill="#d9f4ea" opacity=".65"/><circle cx="90" cy="1080" r="150" fill="#e0eaff" opacity=".65"/>
+<text x="80" y="100" class="title">Inbox Autopilot</text>
+<text x="82" y="143" class="sub">A tiny helper that checks your mail and tells you what needs attention</text>
+<rect x="1210" y="67" rx="24" width="300" height="48" fill="#17324d"/><text x="1360" y="98" text-anchor="middle" class="pill" fill="white" style="fill:white">Checks every 5 minutes</text>
+<!-- flow top -->
+<g filter="url(#shadow)">
+ <rect x="70" y="195" rx="24" width="420" height="205" fill="white"/>
+ <rect x="590" y="195" rx="24" width="420" height="205" fill="white"/>
+ <rect x="1110" y="195" rx="24" width="420" height="205" fill="white"/>
+</g>
+<circle cx="112" cy="238" r="24" fill="#4285f4"/><text x="112" y="246" text-anchor="middle" class="num">1</text>
+<text x="150" y="247" class="h">A new email arrives</text>
+<text x="105" y="298" class="p"><tspan x="105" dy="0">Gmail keeps it in your Inbox.</tspan><tspan x="105" dy="31">Autopilot looks for unread mail.</tspan></text>
+<rect x="105" y="354" rx="17" width="154" height="30" fill="#e8f0fe"/><text x="182" y="375" text-anchor="middle" class="tiny">Gmail Inbox</text>
+<path d="M500 298 H570" stroke="#66809c" stroke-width="4" marker-end="url(#arrow)"/>
+<circle cx="632" cy="238" r="24" fill="#34a853"/><text x="632" y="246" text-anchor="middle" class="num">2</text>
+<text x="670" y="247" class="h">Apps Script checks</text>
+<text x="625" y="298" class="p"><tspan x="625" dy="0">A timer wakes it up every 5 minutes.</tspan><tspan x="625" dy="31">It handles up to 1 email each time.</tspan></text>
+<rect x="625" y="354" rx="17" width="225" height="30" fill="#e6f4ea"/><text x="737" y="375" text-anchor="middle" class="tiny">Skips autopilot-done emails</text>
+<path d="M1020 298 H1090" stroke="#66809c" stroke-width="4" marker-end="url(#arrow)"/>
+<circle cx="1152" cy="238" r="24" fill="#8e63ce"/><text x="1152" y="246" text-anchor="middle" class="num">3</text>
+<text x="1190" y="247" class="h">Groq AI sorts it</text>
+<text x="1145" y="298" class="p"><tspan x="1145" dy="0">It reads the message and returns:</tspan><tspan x="1145" dy="31">type • importance • short summary</tspan></text>
+<rect x="1145" y="354" rx="17" width="225" height="30" fill="#f0eaff"/><text x="1257" y="375" text-anchor="middle" class="tiny">also suggests a short reply</text>
+<!-- down arrow -->
+<path d="M1320 414 V452" stroke="#66809c" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="800" y="480" text-anchor="middle" class="h">4  Then it follows the email’s category</text>
+<!-- category cards -->
+<g filter="url(#shadow)">
+ <rect x="70" y="515" rx="22" width="340" height="235" fill="#fff"/>
+ <rect x="440" y="515" rx="22" width="340" height="235" fill="#fff"/>
+ <rect x="810" y="515" rx="22" width="340" height="235" fill="#fff"/>
+ <rect x="1180" y="515" rx="22" width="350" height="235" fill="#fff"/>
+</g>
+<rect x="70" y="515" rx="22" width="340" height="12" fill="#ea4335"/><text x="100" y="566" class="h">Spam</text>
+<text x="100" y="610" class="p"><tspan x="100">Adds a spam label and</tspan><tspan x="100" dy="30">archives the email.</tspan></text>
+<rect x="100" y="688" rx="17" width="218" height="34" fill="#fde8e6"/><text x="209" y="711" text-anchor="middle" class="pill" style="fill:#a52714">No Telegram alert</text>
+<rect x="440" y="515" rx="22" width="340" height="12" fill="#fbbc04"/><text x="470" y="566" class="h">Newsletter</text>
+<text x="470" y="610" class="p"><tspan x="470">Adds a label and archives it.</tspan><tspan x="470" dy="30">It still gets a Telegram alert.</tspan></text>
+<rect x="470" y="688" rx="17" width="240" height="34" fill="#fff4ce"/><text x="590" y="711" text-anchor="middle" class="pill" style="fill:#7a5700">Alert, then archive</text>
+<rect x="810" y="515" rx="22" width="340" height="12" fill="#4285f4"/><text x="840" y="566" class="h">Needs a reply</text>
+<text x="840" y="610" class="p"><tspan x="840">Saves a reply as a Gmail draft.</tspan><tspan x="840" dy="30">You check it and send it yourself.</tspan></text>
+<rect x="840" y="688" rx="17" width="250" height="34" fill="#e8f0fe"/><text x="965" y="711" text-anchor="middle" class="pill" style="fill:#174ea6">Draft + Telegram alert</text>
+<rect x="1180" y="515" rx="22" width="350" height="12" fill="#34a853"/><text x="1210" y="566" class="h">Urgent or FYI</text>
+<text x="1210" y="610" class="p"><tspan x="1210">Sends a Telegram message with</tspan><tspan x="1210" dy="30">sender, subject, and summary.</tspan></text>
+<rect x="1210" y="688" rx="17" width="220" height="34" fill="#e6f4ea"/><text x="1320" y="711" text-anchor="middle" class="pill" style="fill:#137333">Telegram alert</text>
+<!-- bottom storage -->
+<g filter="url(#shadow)"><rect x="70" y="800" rx="24" width="710" height="230" fill="#17324d"/><rect x="820" y="800" rx="24" width="710" height="230" fill="#fff"/></g>
+<text x="110" y="852" class="h" style="fill:white">5  A notebook keeps a record</text>
+<text x="110" y="899" class="p" style="fill:#eef5ff"><tspan x="110">A Google Sheet records what was processed.</tspan><tspan x="110" dy="31">API keys live in Script Properties, not in the code.</tspan></text>
+<rect x="110" y="970" rx="17" width="245" height="34" fill="#dce8fb"/><text x="232" y="993" text-anchor="middle" class="pill">Google Sheet log</text>
+<rect x="375" y="970" rx="17" width="275" height="34" fill="#d9f4ea"/><text x="512" y="993" text-anchor="middle" class="pill">Private Script Properties</text>
+<text x="860" y="852" class="h">What stays in your hands</text>
+<text x="860" y="899" class="p"><tspan x="860">No reply is sent automatically. You review drafts.</tspan><tspan x="860" dy="31">Each Gmail account needs its own authorization</tspan><tspan x="860" dy="31">and 5-minute trigger to watch that account’s inbox.</tspan></text>
+<text x="800" y="1084" text-anchor="middle" class="small">Simple version: Gmail receives it → Apps Script checks → Groq sorts → Telegram tells you (except spam) → you decide what to do.</text>
+<text x="800" y="1122" text-anchor="middle" class="tiny">Inbox Autopilot • Built with Google Apps Script, Groq, Telegram, and Google Sheets</text>
+</svg>
