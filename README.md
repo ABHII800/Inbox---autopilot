@@ -74,14 +74,6 @@ inbox-autopilot/
 └── .gitignore
 ```
 
-## Add it to your GitHub profile
-
-1. Sign in to GitHub and create a repository named `inbox-autopilot`.
-2. Choose **Public** only if you want anyone to see the code. Never upload API keys or private email data.
-3. Add `README.md`, `inbox-autopilot-overview.svg`, `.gitignore`, and the reviewed `Code.gs`.
-4. On your GitHub profile, open **Repositories → Customize your pins** and pin `inbox-autopilot`.
-5. You can also add the repository link to your profile README under a “Projects” heading.
-
 ## Security checklist before publishing
 
 - Search the files for actual key values (for example, a Groq key beginning with `gsk_`), the Telegram bot token, the chat ID value, and your spreadsheet ID. Property names such as `TELEGRAM_BOT_TOKEN` are safe; their values must stay private.
